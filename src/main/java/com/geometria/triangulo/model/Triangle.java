@@ -26,6 +26,12 @@ public class Triangle {
         return sideA + sideB + sideC;
     }
 
+    public boolean isValidTriangle() {
+        return (sideA + sideB > sideC) &&
+                (sideB + sideC > sideA) &&
+                (sideA + sideC > sideB);
+    }
+
     public double getSideA() {
         return sideA;
     }
