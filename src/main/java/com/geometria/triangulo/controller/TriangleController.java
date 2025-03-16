@@ -32,6 +32,9 @@ public class TriangleController {
                         sideB = view.getSideBInput();
                         sideC = view.getSideCInput();
                         triangle = new Triangle(sideA, sideB, sideC);
+                        if (!triangle.isValidTriangle()) {
+                            throw new IllegalArgumentException("Triângulo inválido!");
+                        }
                         view.showResult("Perímetro", triangle.calculatePerimeter());
                         break;
                     default:
