@@ -33,6 +33,7 @@ public class TriangleController {
                         sideC = view.getSideCInput();
                         triangle = new Triangle(sideA, sideB, sideC);
                         view.showResult("Perímetro", triangle.calculatePerimeter());
+                        break;
                     default:
                         view.showError("Opção inválida. Tente novamente!");
                 }
